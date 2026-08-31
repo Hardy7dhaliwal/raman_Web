@@ -28,7 +28,7 @@ img { display: block; max-width: 100%; }
 .topbar a { margin-left: auto; color: var(--aqua); font-weight: 700; }
 .status-dot { width: 7px; height: 7px; border-radius: 50%; background: #84d6a5; box-shadow: 0 0 0 4px rgba(132,214,165,.12); }
 
-.site-header { position: relative; z-index: 10; background: var(--cream); }
+.site-header { position: sticky; top: 0; z-index: 20; background: rgba(244, 241, 233, 0.72); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); }
 .nav-wrap { display: flex; min-height: 92px; align-items: center; justify-content: space-between; }
 .brand { display: inline-flex; align-items: center; }
 .brand-mark { display: block; width: 190px; }
