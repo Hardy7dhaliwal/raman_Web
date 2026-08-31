@@ -179,7 +179,8 @@ h2 span { color: var(--blue); }
   .topbar-inner { font-size: 10px; }
   .topbar a { font-size: 10px; }
   .nav-wrap { min-height: 76px; }
-  .brand-mark { width: 155px; }
+  .brand-mark { width: auto; max-width: 160px; }
+  .brand-mark img { height: 46px; width: auto; object-fit: contain; }
   .menu-toggle { display: grid; gap: 4px; padding: 8px 0 8px 8px; cursor: pointer; }
   .menu-toggle > span:not(.sr-only) { display: block; width: 25px; height: 2px; background: var(--ink); }
   .site-nav { position: absolute; top: 76px; right: 16px; left: 16px; display: none; padding: 16px; border: 1px solid var(--line); background: var(--white); box-shadow: 0 10px 30px rgba(17,44,58,.12); }

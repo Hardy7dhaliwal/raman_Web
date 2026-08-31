@@ -6,11 +6,23 @@ menuButton?.addEventListener('click', () => {
   menuButton.setAttribute('aria-expanded', String(isOpen));
 });
 
+const closeMenu = () => {
+  navigation?.classList.remove('is-open');
+  menuButton?.setAttribute('aria-expanded', 'false');
+};
+
 navigation?.querySelectorAll('a').forEach((link) => {
-  link.addEventListener('click', () => {
-    navigation.classList.remove('is-open');
-    menuButton?.setAttribute('aria-expanded', 'false');
-  });
+  link.addEventListener('click', closeMenu);
+});
+
+document.addEventListener('click', (event) => {
+  if (navigation?.classList.contains('is-open') && !navigation.contains(event.target) && !menuButton?.contains(event.target)) {
+    closeMenu();
+  }
+});
+
+document.addEventListener('keydown', (event) => {
+  if (event.key === 'Escape') closeMenu();
 });
 
 document.querySelector('#year').textContent = new Date().getFullYear();
