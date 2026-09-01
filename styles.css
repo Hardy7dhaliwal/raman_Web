@@ -28,7 +28,8 @@ img { display: block; max-width: 100%; }
 .topbar a { margin-left: auto; color: var(--aqua); font-weight: 700; }
 .status-dot { width: 7px; height: 7px; border-radius: 50%; background: #84d6a5; box-shadow: 0 0 0 4px rgba(132,214,165,.12); }
 
-.site-header { position: sticky; top: 0; z-index: 20; background: rgba(244, 241, 233, 0.72); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); }
+.site-header { position: sticky; top: 0; z-index: 20; background: transparent; transition: background .25s ease, box-shadow .25s ease; }
+.site-header.is-scrolled { background: rgba(244, 241, 233, 0.82); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); box-shadow: 0 1px 0 var(--line), 0 10px 28px rgba(17, 44, 58, 0.06); }
 .nav-wrap { display: flex; min-height: 92px; align-items: center; justify-content: space-between; }
 .brand { display: inline-flex; align-items: center; gap: 13px; }
 .brand-mark { display: block; width: 54px; }
