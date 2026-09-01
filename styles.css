@@ -61,8 +61,8 @@ h1 em::after { content: ''; display: block; width: 126px; height: 7px; margin-to
 .button-primary { color: var(--white); background: var(--blue-dark); }
 .button-primary:hover { background: var(--blue); }
 .button-light { color: var(--ink); background: var(--aqua); }
-.button-secondary { color: var(--ink); background: var(--white); border: 1px solid var(--line); }
-.button-secondary:hover { background: #f1efe7; }
+.button-secondary { color: var(--ink); background-color: var(--white); border: 2px solid var(--ink); box-shadow: 0 4px 0 var(--ink); }
+.button-secondary:hover { background: var(--cream); box-shadow: 0 7px 0 var(--ink); }
 .button-row { display: flex; flex-wrap: wrap; gap: 14px; }
 .button span { font-size: 19px; font-weight: 400; }
 .text-link { border-bottom: 1px solid var(--ink); padding-bottom: 4px; font-size: 13px; font-weight: 700; }
